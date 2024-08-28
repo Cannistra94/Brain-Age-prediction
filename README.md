@@ -7,7 +7,7 @@ In this project, pipeline is implemented to:
 -apply pre-processing procedures to the DTI and MRI sequences
 -extract features describing structural volumes (derived from T1w MRI) and white matter tracts (derived from DTI)
 -these features are then used into a ML model to predict the brain age
--predicted age, as identified in previous studies, suffer from age bias, a statistical trend that brings biases model to underestimate the predicted
+-predicted age, as identified in previous studies, suffer from age bias, a statistical trend that brings biases into the age predictions. Furthermore, an age bias correction is applied
 -Brain Age Gap (BAG), defined as the delta between the predicted age and chronological age, is then extracted
 -BAG can then be used to assess the impact of lifestyle, socioeconomic or genetic factors
 -BAG can also be used to test for differences between case/controls or, in general, between groups, defined according to the experimental settings
