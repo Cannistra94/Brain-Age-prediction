@@ -14,3 +14,9 @@ Methods and pre-processing techniques implemented:
 -Utilize BAG to assess the impact of lifestyle, socioeconomic, or genetic factors
 -Employ BAG to test for differences between case/control groups or other experimental groupings
 
+-> Tools, techniques and programming languages: 
+-R and Python programming languages
+-FMRIB Software Library (FSL) for imaging data pre-processing
+-Big data handling and extraction (500,000 participants)
+-ML regression models (Support vector regression, Lasso, Linear Regression, Random Forests Regression)
+-Statistical analysis (linear regression models)
