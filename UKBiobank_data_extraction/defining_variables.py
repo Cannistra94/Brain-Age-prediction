@@ -1,7 +1,7 @@
 #this script select the columns of interest from the UK BIOBANK dataset, 
 #as the dataset contains around 500,000 participants and hundred of thousands of variables
 #we want to remove any neurological or psychological disorders to avoid confounds 
-#then we select chronic pain, acute pain and healthy controls participants
+#defining all the variables needed for the analysis
 import pandas as pd
 import numpy as np
 
@@ -151,4 +151,12 @@ for col in data.columns:
         acute_pain_cols.append(col)
     if f'6159-0.6' in col:
         acute_pain_cols.append(col)
+
+#imaging data
+field_ids = [f"25{str(i).zfill(3)}-2.0" for i in range(1, 26)] #change to 3.0 for imaging visit 2
+field_ids_t1_2 = [f"25{str(i).zfill(3)}-2.0" for i in range(781, 921)]
+t1_fields = field_ids + field_ids_t1_2
+
+field_dti = [f"25{str(i).zfill(3)}-2.0" for i in range(56, 731)]
+all_img = t1_fields + field_dti
 
