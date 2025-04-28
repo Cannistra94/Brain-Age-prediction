@@ -1,3 +1,7 @@
+#this script select the columns of interest from the UK BIOBANK dataset, 
+#as the dataset contains around 500,000 participants and hundred of thousands of variables
+#we want to remove any neurological or psychological disorders to avoid confounds 
+#then we select chronic pain, acute pain and healthy controls participants
 import pandas as pd
 import numpy as np
 
@@ -113,3 +117,5 @@ icd9_codes += [str(idx) for idx in range(4340,4350)]
 icd9_codes += ['3003']
 
 icd9_codes = set(icd9_codes).union(set([code+'.0' for code in icd9_codes]))
+
+
