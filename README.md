@@ -1,22 +1,43 @@
-# Brain Age analysis: a Machine Learning Study
-Background: 
-Brain age, derived from structural Magnetic Resonance Imaging (MRI) and Diffusion Tensor Imaging (DTI) scans using Deep Learning (DL) or Machine Learning (ML) models, serves as a biomarker that provides insights into an individual's brain health relative to their chronological age. This measure captures deviations in brain structure and white matter integrity, which may indicate accelerated aging or early signs of neurodegenerative diseases. By comparing predicted brain age to actual chronological age, researchers can assess the impact of factors such as disease, lifestyle, and genetics on brain health.
+🧠 Brain Age Analysis: A Machine Learning Study
 
-Aim of the project: 
-Chronic pain is known to alter brain structure and functionality, potentially accelerating neurodegenerative processes. The aim of this project was to investigate the extent to which chronic pain affects brain aging by using brain age as a quantitative biomarker. Specifically, we assessed whether individuals with chronic pain exhibited increased brain age compared to healthy controls, providing insights into the impact of chronic pain on brain health and aging.
+📚 Background
 
-Methods and pre-processing techniques implemented:
--DTI and MRI (T1 weighted) data pre-processing
--Features extraction from pre-processed sequences to describe structural volumes (derived from T1-weighted MRI) and white matter tracts (derived from DTI)
--ML model building to predict brain age
--Age bias (a statistical trend that can skew age predictions) calculation and correction using different statistical approaches
--Brain Age Gap (BAG) computation (after bias correction), defined as the difference between the predicted age and chronological age
--Utilize BAG to assess the impact of lifestyle, socioeconomic, or genetic factors
--Employ BAG to test for differences between case/control groups or other experimental groupings
+Brain age, derived from structural Magnetic Resonance Imaging (MRI) and Diffusion Tensor Imaging (DTI) scans using Deep Learning (DL) or Machine Learning (ML) models, serves as a biomarker that provides insights into an individual's brain health relative to their chronological age.
+This measure captures deviations in brain structure and white matter integrity, which may indicate accelerated aging or early signs of neurodegenerative diseases.
+By comparing predicted brain age to actual chronological age, researchers can assess the impact of factors such as disease, lifestyle, and genetics on brain health.
 
--> Tools, techniques and programming languages: 
--R and Python programming languages
--FMRIB Software Library (FSL) for imaging data pre-processing
--Big data handling and extraction (500,000 participants)
--ML regression models (Support vector regression, Lasso, Linear Regression, Random Forests Regression)
--Statistical analysis (linear regression models)
+🎯 Aim of the Project
+
+Chronic pain is known to alter brain structure and functionality, potentially accelerating neurodegenerative processes.
+This project aimed to investigate the extent to which chronic pain affects brain aging by using brain age as a quantitative biomarker.
+Specifically, we assessed whether individuals with chronic pain exhibited increased brain age compared to healthy controls, providing insights into the impact of chronic pain on brain health and aging.
+
+⚙️ Methods and Pre-processing Techniques Implemented
+
+DTI and MRI (T1-weighted) data pre-processing
+Feature extraction from pre-processed sequences to describe:
+Structural brain volumes (from T1-weighted MRI)
+White matter tracts (from DTI)
+ML model development to predict brain age
+Age bias calculation and correction, using different statistical approaches
+Brain Age Gap (BAG) computation after bias correction (defined as the difference between predicted and chronological age)
+Use of BAG to:
+Assess the impact of lifestyle, socioeconomic, and genetic factors
+Evaluate differences between case and control groups (or other experimental groupings)
+
+🛠️ Tools, Techniques, and Programming Languages
+
+Programming Languages:
+R
+Python
+Software and Libraries:
+FMRIB Software Library (FSL) for imaging pre-processing
+Big Data Handling:
+Processing and feature extraction from datasets including ~500,000 participants
+Machine Learning Models:
+Support Vector Regression (SVR)
+Lasso Regression
+Linear Regression
+Random Forest Regression
+Statistical Analysis:
+Linear regression models used for age bias correction, BAG correlation with other variables, and group comparisons
