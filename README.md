@@ -41,3 +41,5 @@ Linear Regression
 Random Forest Regression
 Statistical Analysis:
 Linear regression models used for age bias correction, BAG correlation with other variables, and group comparisons
+
+abstract presented at the Society of Neuroscience 2024, Washington DC, USA  ---> M. Cannistra, V. Sacca, G. Tradigo, P. Veltri, T. Ge, J. Kong; Evaluation of musculoskeletal pain’s impact on brain age in UK Biobank cohorts using multimodality neuroimaging: a Machine Learning study. Society of Neuroscience (SfN), 2023, Washington D.C. 11-15 November.
