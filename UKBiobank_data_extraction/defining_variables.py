@@ -118,4 +118,37 @@ icd9_codes += ['3003']
 
 icd9_codes = set(icd9_codes).union(set([code+'.0' for code in icd9_codes]))
 
+#selecting pain-related columns
+chronic_pain_cols = []
+acute_pain_cols=[]
+for col in data.columns:
+    #if f'6159-2.0' in col:
+     #    chronic_pain_cols.append(col)
+    if '3571-0.0' in col:     #back pain 3+months
+        chronic_pain_cols.append(col)       
+    if f'2956-{ins_id}' in col:     #general pains 3+months
+        chronic_pain_cols.append(col)
+    if '3414-0.0' in col:     #hip pain 3+months
+        chronic_pain_cols.append(col)
+    if '3773-0.0' in col:     #knee pain 3+months
+        chronic_pain_cols.append(col)
+    if '3404-0.0' in col:     #neck/shoulder pain 3+months
+        chronic_pain_cols.append(col)
+    
+
+for col in data.columns:
+    if f'6159-0.0' in col:
+        acute_pain_cols.append(col)
+    if f'6159-0.1' in col:
+        acute_pain_cols.append(col)
+    if f'6159-0.2' in col:
+        acute_pain_cols.append(col)
+    if f'6159-0.3' in col:
+        acute_pain_cols.append(col)
+    if f'6159-0.4' in col:
+        acute_pain_cols.append(col)
+    if f'6159-0.5' in col:
+        acute_pain_cols.append(col)
+    if f'6159-0.6' in col:
+        acute_pain_cols.append(col)
 
