@@ -1,4 +1,4 @@
-🧠 Brain Age Analysis: A Machine Learning Study
+🧠 Brain Age Analysis: A Machine Learning Framework
 
 📚 Background
 
@@ -8,22 +8,16 @@ By comparing predicted brain age to actual chronological age, researchers can as
 
 🎯 Aim of the Project
 
-Chronic pain is known to alter brain structure and functionality, potentially accelerating neurodegenerative processes.
-This project aimed to investigate the extent to which chronic pain affects brain aging by using brain age as a quantitative biomarker.
-Specifically, we assessed whether individuals with chronic pain exhibited increased brain age compared to healthy controls, providing insights into the impact of chronic pain on brain health and aging.
+This project aims to establish a framework for the preprocessing of various MRI sequences, specifically DTI and T1-weighted (T1w) images. The framework includes a feature extraction pipeline, followed by the application of ML models to predict brain age and evaluate discrepancies from chronological age. The proposed brain age framework is applied to three cohorts—healthy controls, individuals with acute pain, and those with chronic pain—to predict brain age, examine differences in brain age delta (predicted age minus chronological age), and explore associations with lifestyle and biomedical variables.
 
 ⚙️ Methods and Pre-processing Techniques Implemented
 
-DTI and MRI (T1-weighted) data pre-processing
-Feature extraction from pre-processed sequences to describe:
-Structural brain volumes (from T1-weighted MRI)
-White matter tracts (from DTI)
+DTI and T1w data pre-processing
+Feature extraction from pre-processed sequences to describe structural brain volumes (from T1w) and white matter tracts (from DTI)
 ML model development to predict brain age
-Age bias calculation and correction, using different statistical approaches
+Age bias calculation and correction
 Brain Age Gap (BAG) computation after bias correction (defined as the difference between predicted and chronological age)
-Use of BAG to:
-Assess the impact of lifestyle, socioeconomic, and genetic factors
-Evaluate differences between case and control groups (or other experimental groupings)
+Use of BAG to: assess the impact of lifestyle, socioeconomic, and genetic factors, evaluate differences between case and control groups (or other experimental groupings)
 
 🛠️ Tools, Techniques, and Programming Languages
 
@@ -32,14 +26,12 @@ R
 Python
 Software and Libraries:
 FMRIB Software Library (FSL) for imaging pre-processing
-Big Data Handling:
-Processing and feature extraction from datasets including ~500,000 participants
+Big Data analysis: dataset including ~500,000 participants
 Machine Learning Models:
 Support Vector Regression (SVR)
 Lasso Regression
 Linear Regression
 Random Forest Regression
-Statistical Analysis:
-Linear regression models used for age bias correction, BAG correlation with other variables, and group comparisons
+Statistical Analysis: statistical methods for age bias correction, BAG correlation with other variables, and group comparisons
 
-abstract presented at the Society of Neuroscience 2024, Washington DC, USA  ---> M. Cannistra, V. Sacca, G. Tradigo, P. Veltri, T. Ge, J. Kong; Evaluation of musculoskeletal pain’s impact on brain age in UK Biobank cohorts using multimodality neuroimaging: a Machine Learning study. Society of Neuroscience (SfN), 2023, Washington D.C. 11-15 November.
+Abstract presented at the Society of Neuroscience 2024, Washington DC, USA  ---> M. Cannistra, V. Sacca, G. Tradigo, P. Veltri, T. Ge, J. Kong; Evaluation of musculoskeletal pain’s impact on brain age in UK Biobank cohorts using multimodality neuroimaging: a Machine Learning study. Society of Neuroscience (SfN), 2023, Washington D.C. 11-15 November.
